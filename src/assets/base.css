@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+:root {
+  /* Primary */
+  --c-white: #fff;
+  --c-black: #000;
+  --c-scissors: hsl(40, 84%, 53%);
+  --c-paper: hsl(230, 89%, 65%);
+  --c-rock: hsl(349, 70%, 56%);
+  --c-lizard: hsl(261, 72%, 63%);
+  --c-cyan: hsl(189, 58%, 57%);
+
+  /* Neutral */
+  --c-dark-text: hsl(229, 25%, 31%);
+  --c-score-text: hsl(229, 64%, 46%);
+  --c-header-outline: hsl(217, 16%, 45%);
+
+  /* Background */
+  --с-radial-gradient: hsl(214, 47%, 23%) to hsl(237, 49%, 15%);
+
+  /* Box Shadow */
+  --с-light-grey: rgba(109, 119, 143, 0.212);
+  --c-grey: rgba(57, 70, 100, 0.219);
+  --c-dark-grey: rgba(57, 70, 100, 0.103);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  color: var(--c-dark-text);
+  background: radial-gradient(at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  background-repeat: no-repeat;
+  transition: color 0.5s, background-color 0.5s;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1440px) {
+  .wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 425px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .wrapper {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+}
